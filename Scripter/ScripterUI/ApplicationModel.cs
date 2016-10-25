@@ -21,7 +21,7 @@ namespace Scripter
             };
             mainViewModel.Initialize();
             mainWindow = new MainWindow { Content = (UIElement)mainViewModel.View };
-            mainViewModel.Load();
+            //mainViewModel.Load();
             mainWindow.Show();
         }
     }

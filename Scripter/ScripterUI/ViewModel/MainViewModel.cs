@@ -18,20 +18,12 @@ namespace Scripter.ViewModel
             }
         }
 
-        private string firstName;
+        private string authorName;
 
-        public string FirstName
+        public string AuthorName
         {
-            get { return firstName; }
-            set { SetProperty(ref firstName, value, "FirstName"); }
-        }
-
-        private string lastName;
-
-        public string LastName
-        {
-            get { return lastName; }
-            set { SetProperty(ref lastName, value, "LastName"); }
+            get { return authorName; }
+            set { SetProperty(ref authorName, value, "AuthorName"); }
         }
 
         public MainViewModel()
@@ -41,11 +33,7 @@ namespace Scripter.ViewModel
 
         public override void Initialize()
         {
-        }
-
-        public override void Load()
-        {
-            FirstName = Environment.UserName.ToString();
+            AuthorName = Environment.UserName.Split('_')[0]+ " "+ Environment.UserName.Split('_')[1];
             //string MyKeyWord = "XMP";
 
             //var allDirectories = new DirectoryInfo(SearchDirectoryName).GetDirectories("*", SearchOption.AllDirectories);

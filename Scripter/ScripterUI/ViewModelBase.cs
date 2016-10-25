@@ -17,13 +17,13 @@ namespace Scripter
         {
         }
 
-        public virtual void Load()
-        {
-        }
+        //public virtual void Load()
+        //{
+        //}
 
-        public virtual void Unload()
-        {
-        }
+        //public virtual void Unload()
+        //{
+        //}
 
         private void onPropertyChanged(string propertyName = null)
         {
